@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Bebas Neue';
+  box-sizing: border-box; }
+
+main {
+  margin-top: 6rem; }
+
+.nav {
+  background-color: #141414;
+  padding: 10px 0;
+  box-shadow: 0 0 10px #141414;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  .nav .nav__logo {
+    color: #0072e7;
+    font-size: 1.5rem;
+    margin-left: 10px; }
+  .nav .nav__toggle {
+    position: absolute;
+    right: 1rem; }
+    .nav .nav__toggle .nav__icon {
+      color: #0072e7;
+      font-size: 2em; }
+    .nav .nav__toggle .nav__icon:hover {
+      cursor: pointer; }
+  .nav .nav__list {
+    position: fixed;
+    width: 100%;
+    background-color: #141414;
+    box-shadow: 0 0 10px #141414;
+    padding-top: 16px;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4em; }
+    .nav .nav__list .nav__item .nav__link {
+      text-decoration: none;
+      color: #0072e7;
+      display: block;
+      padding: 10px;
+      font-weight: bold; }
+    .nav .nav__list .nav__item .nav__link:hover {
+      color: #141414;
+      background-color: #0072e7;
+      transition: 0.3s; }
+  .nav .disabled {
+    display: none; }
+
+.intro {
+  color: #141414;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem 0; }
+  .intro .intro__perfil {
+    width: 230px;
+    box-shadow: 0 0 10px black;
+    background-color: #141414;
+    border-radius: 50%; }
+  .intro .intro__title {
+    margin: 1rem 0 0 0; }
+  .intro .intro__subtitle {
+    margin-bottom: 2rem;
+    color: #0072e7; }
+  .intro .intro__list {
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    width: 50%; }
+    .intro .intro__list .intro__item {
+      padding: 10px; }
+      .intro .intro__list .intro__item .intro__link .intro__img {
+        width: 30px; }
+  .intro .intro__button {
+    background-color: #141414;
+    text-decoration: none;
+    color: #0072e7;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    width: 50%; }
+  .intro .intro__button:hover {
+    color: white;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px #141414; }
