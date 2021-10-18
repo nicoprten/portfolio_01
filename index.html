@@ -20,8 +20,8 @@
                 <p>Nicolás</p>
             </div>
             <ul class='nav__list disabled' id='list'>
-                <li class='nav__item'><a class='nav__link' href='#home'>HOME</a></li>
-                <li class='nav__item'><a class='nav__link' href=''>ABOUT ME</a></li>
+                <li class='nav__item'><a class='nav__link' href='#me'>HOME</a></li>
+                <li class='nav__item'><a class='nav__link' href='#about'>ABOUT ME</a></li>
                 <li class='nav__item'><a class='nav__link' href=''>SKILLS</a></li>
                 <li class='nav__item'><a class='nav__link' href=''>WORK</a></li>
                 <li class='nav__item'><a class='nav__link' href=''>CONTACT ME</a></li>
@@ -29,7 +29,10 @@
         </nav>
     </header>
     <main>
-        <div id='home' class='intro'>
+
+        <!-- HOME -->
+
+        <div id='me' class='intro'>
             <img class='intro__perfil' src='img/perfil_circle_01.png' alt='profile picture'>
             <h1 class='intro__title'>Matías Nicolás Prtenjaca</h1>
             <h2 class='intro__subtitle'>Frontend Developer</h2>
@@ -52,6 +55,27 @@
             </ul>
             <a download href='files/CV-v2.pdf' class='intro__button' id='download_cv'>DOWNLOAD CV</a>
             <div id='msj_cv'></div>
+        </div>
+
+        <!-- ABOUT ME -->
+        <div id='about' class='aboutme'>
+            <h2 class='aboutme__title'>ABOUT ME</h2>
+            <div class='aboutme__container'>
+                <h3 class='aboutme__subtitle'>Coder</h3>
+                <p class='aboutme__text'>Hello, my name is Nicolás, I studied web development 3 years ago and I am currently studying react, I realized that I am passionate about this world and it makes me want to continue improving my skills as a programmer and as a person.</p>
+                <div class='lp'>
+                    <a class='lp__text' href='https://nicoprten.github.io/to_do_list/' target='_blank'>Last proyect</a>
+                    <img class='lp__img' src='img/last_proyect_coder.jpg' alt='Last proyect'>
+                </div>
+            </div>
+            <div class='aboutme__container'>
+                <h3 class='aboutme__subtitle'>Designer</h3>
+                <p class='aboutme__text'>I started using photoshop and illustrator in the tertiary that I did in "DaVinci". There I learned the basics to continue improving my skills in a self-taught way. I did freelance work for artists such as cover designs or video lyrics for which I had to learn after effects. I love the idea of ​​creating designs that serve to style different things.</p>
+                <div class='lp'>
+                    <a class='lp__text' href='https://www.youtube.com/watch?v=HJ-ahmQLU5M' target='_blank'>Last proyect</a>
+                    <img class='lp__img' src='img/last_proyect_design.jpg' alt='Last proyect'>
+                </div>
+            </div>
         </div>
     </main>
     <footer>

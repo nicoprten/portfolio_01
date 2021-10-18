@@ -1,18 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,500;1,500&display=swap");
 * {
   padding: 0;
   margin: 0;
   font-family: 'Bebas Neue';
   box-sizing: border-box; }
 
-main {
-  margin-top: 6rem; }
+img {
+  width: 100%;
+  height: auto; }
 
 .nav {
   background-color: #141414;
   padding: 10px 0;
   box-shadow: 0 0 10px #141414;
   position: fixed;
+  z-index: 2;
   top: 0;
   width: 100%; }
   .nav .nav__logo {
@@ -56,13 +59,13 @@ main {
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 1.5rem 0; }
+  align-items: center; }
   .intro .intro__perfil {
     width: 230px;
     box-shadow: 0 0 10px black;
     background-color: #141414;
-    border-radius: 50%; }
+    border-radius: 50%;
+    margin-top: 6rem; }
   .intro .intro__title {
     margin: 1rem 0 0 0; }
   .intro .intro__subtitle {
@@ -93,3 +96,56 @@ main {
     color: white;
     transition: 0.3s;
     box-shadow: 0px 0px 10px #141414; }
+
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 5rem; }
+  .aboutme .aboutme__title {
+    color: #0072e7;
+    border-bottom: 2px solid #0072e7;
+    border-top: 2px solid #0072e7;
+    border-radius: 1.5rem;
+    padding: 1rem; }
+  .aboutme .aboutme__container {
+    background-color: #141414;
+    border-radius: 1.5rem;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 1rem; }
+    .aboutme .aboutme__container .aboutme__subtitle {
+      font-size: 1.5em; }
+    .aboutme .aboutme__container .aboutme__text {
+      font-family: 'Andada Pro', serif;
+      margin-top: 1rem;
+      line-height: 1.25em; }
+    .aboutme .aboutme__container .lp {
+      position: relative; }
+      .aboutme .aboutme__container .lp .lp__text {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background-color: #141414;
+        padding: 1rem;
+        border-radius: .5rem;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        color: white;
+        text-decoration: none; }
+      .aboutme .aboutme__container .lp .lp__img {
+        margin: 1rem 0 0 0;
+        border-radius: 1rem; }
+    .aboutme .aboutme__container .lp:hover .lp__text {
+      opacity: 1;
+      transition: 0.3s;
+      cursor: pointer; }
+    .aboutme .aboutme__container .lp__text:hover {
+      box-shadow: 0 0 10px #141414;
+      color: #0072e7; }
+
+@media screen and (max-width: 400px) {
+  .lp__text {
+    opacity: 1 !important; } }
