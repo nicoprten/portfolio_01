@@ -76,6 +76,16 @@ img{
     }
 }
 
+// CLASSES
+
+.title{
+    color: $blue;
+    border-bottom: 2px solid $blue;
+    border-top: 2px solid $blue;
+    border-radius: 1.5rem;
+    padding: 1rem;
+}
+
 // HOME
 
 .intro{
@@ -134,19 +144,12 @@ img{
 
 // ABOUT ME
 
-.aboutme{
+.container{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
     padding-top: 5rem;
-    .aboutme__title{
-        color: $blue;
-        border-bottom: 2px solid $blue;
-        border-top: 2px solid $blue;
-        border-radius: 1.5rem;
-        padding: 1rem;
-    }
     .aboutme__container{
         background-color: $black;
         border-radius: 1.5rem;
@@ -195,5 +198,23 @@ img{
 @media screen and (max-width: 400px) {
     .lp__text{
         opacity: 1 !important;
+    }
+}
+
+// SKILLS
+
+.list__skills{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .skills__item{
+        background-color: $black;
+        color: white;
+        padding: 1rem;
+        margin: .5rem .2rem;
+        border-radius: 1rem;
+        flex: 1 1;
+        text-align: center;
     }
 }

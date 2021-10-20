@@ -54,6 +54,13 @@ img {
   .nav .disabled {
     display: none; }
 
+.title {
+  color: #0072e7;
+  border-bottom: 2px solid #0072e7;
+  border-top: 2px solid #0072e7;
+  border-radius: 1.5rem;
+  padding: 1rem; }
+
 .intro {
   color: #141414;
   text-align: center;
@@ -97,34 +104,28 @@ img {
     transition: 0.3s;
     box-shadow: 0px 0px 10px #141414; }
 
-.aboutme {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   padding-top: 5rem; }
-  .aboutme .aboutme__title {
-    color: #0072e7;
-    border-bottom: 2px solid #0072e7;
-    border-top: 2px solid #0072e7;
-    border-radius: 1.5rem;
-    padding: 1rem; }
-  .aboutme .aboutme__container {
+  .container .aboutme__container {
     background-color: #141414;
     border-radius: 1.5rem;
     color: white;
     text-align: center;
     padding: 1rem;
     margin: 0 1rem; }
-    .aboutme .aboutme__container .aboutme__subtitle {
+    .container .aboutme__container .aboutme__subtitle {
       font-size: 1.5em; }
-    .aboutme .aboutme__container .aboutme__text {
+    .container .aboutme__container .aboutme__text {
       font-family: 'Andada Pro', serif;
       margin-top: 1rem;
       line-height: 1.25em; }
-    .aboutme .aboutme__container .lp {
+    .container .aboutme__container .lp {
       position: relative; }
-      .aboutme .aboutme__container .lp .lp__text {
+      .container .aboutme__container .lp .lp__text {
         position: absolute;
         left: 50%;
         top: 50%;
@@ -135,17 +136,31 @@ img {
         opacity: 0;
         color: white;
         text-decoration: none; }
-      .aboutme .aboutme__container .lp .lp__img {
+      .container .aboutme__container .lp .lp__img {
         margin: 1rem 0 0 0;
         border-radius: 1rem; }
-    .aboutme .aboutme__container .lp:hover .lp__text {
+    .container .aboutme__container .lp:hover .lp__text {
       opacity: 1;
       transition: 0.3s;
       cursor: pointer; }
-    .aboutme .aboutme__container .lp__text:hover {
+    .container .aboutme__container .lp__text:hover {
       box-shadow: 0 0 10px #141414;
       color: #0072e7; }
 
 @media screen and (max-width: 400px) {
   .lp__text {
     opacity: 1 !important; } }
+
+.list__skills {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .list__skills .skills__item {
+    background-color: #141414;
+    color: white;
+    padding: 1rem;
+    margin: .5rem .2rem;
+    border-radius: 1rem;
+    flex: 1 1;
+    text-align: center; }
