@@ -153,14 +153,12 @@ img {
 
 .list__skills {
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40%, max-content)); }
   .list__skills .skills__item {
     background-color: #141414;
     color: white;
     padding: 1rem;
     margin: .5rem .2rem;
     border-radius: 1rem;
-    flex: 1 1;
     text-align: center; }
