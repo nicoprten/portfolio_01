@@ -283,6 +283,7 @@ footer .container{
         flex-direction: column;
         gap: 1rem;
         width: 60%;
+        position: relative;
         .form__inp{
             text-align: center;
             padding: .5rem;
@@ -304,6 +305,26 @@ footer .container{
             resize: none;
             height: 200px;
             border-radius: 0 0 1rem 1rem;
+        }
+        .form__send{
+            position: absolute;
+            background-color: $blue;
+            border: none;
+            color: white;
+            padding: 1rem;
+            font-size: 1.2em;
+            border-radius: 50%;
+            height: 80px;
+            width: 80px;
+            right: -20px;
+            bottom: -20px;
+        }
+        .form__send:hover{
+            cursor: pointer;
+            box-shadow: 0 0 10px $blue;
+            background-color: white;
+            color: $black;
+            transition: 0.3s;
         }
     }
 }

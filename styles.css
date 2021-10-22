@@ -212,7 +212,8 @@ footer .container {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 60%; }
+    width: 60%;
+    position: relative; }
     footer .container .form .form__inp {
       text-align: center;
       padding: .5rem;
@@ -230,3 +231,21 @@ footer .container {
       resize: none;
       height: 200px;
       border-radius: 0 0 1rem 1rem; }
+    footer .container .form .form__send {
+      position: absolute;
+      background-color: #0072e7;
+      border: none;
+      color: white;
+      padding: 1rem;
+      font-size: 1.2em;
+      border-radius: 50%;
+      height: 80px;
+      width: 80px;
+      right: -20px;
+      bottom: -20px; }
+    footer .container .form .form__send:hover {
+      cursor: pointer;
+      box-shadow: 0 0 10px #0072e7;
+      background-color: white;
+      color: #141414;
+      transition: 0.3s; }
