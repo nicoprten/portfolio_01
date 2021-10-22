@@ -91,54 +91,77 @@ img{
 .intro{
     color: $black;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .intro__perfil{
-        width: 230px;
-        box-shadow: 0 0 10px black;
-        background-color: $black;
-        border-radius: 50%;
-        margin-top: 6rem;
+    .intro__data{
+        .intro__perfil{
+            width: 230px;
+            box-shadow: 0 0 10px black;
+            background-color: $black;
+            border-radius: 50%;
+            margin-top: 6rem;
+        }
+        .intro__title{
+            margin: 1rem 0 0 0;
+        }
+        .intro__subtitle{
+            margin-bottom:2rem;
+            color: $blue;
+        }
     }
-    .intro__title{
-        margin: 1rem 0 0 0;
-    }
-    .intro__subtitle{
-        margin-bottom:2rem;
-        color: $blue;
-    }
-    .intro__list{
-        background-color: $black;
+    .intro__buttons{
         display: flex;
-        justify-content: center;
-        list-style: none;
-        border-radius: 1.5rem;
-        padding: 1rem;
-        width: 50%;
-        .intro__item{
-            padding: 10px;
-            .intro__link{
-                .intro__img{
-                    width: 30px;
+        flex-direction: column;
+        align-items: center;
+        .intro__list{
+            background-color: $black;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            border-radius: 1.5rem;
+            padding: 1rem;
+            width: 50%;
+            .intro__item{
+                padding: 10px;
+                .intro__link{
+                    .intro__img{
+                        width: 30px;
+                    }
                 }
             }
         }
+        .intro__button{
+            background-color:$black;
+            text-decoration: none;
+            color: $blue;
+            padding: 1rem;
+            border-radius: 1.5rem;
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            width: 50%;
+        }
+        .intro__button:hover{
+            color: white;
+            transition: 0.3s;
+            box-shadow: 0px 0px 10px $black;
+        }
+
     }
-    .intro__button{
-        background-color:$black;
-        text-decoration: none;
-        color: $blue;
-        padding: 1rem;
-        border-radius: 1.5rem;
-        font-size: 1.5rem;
-        margin: 1rem 0;
-        width: 50%;
-    }
-    .intro__button:hover{
-        color: white;
-        transition: 0.3s;
-        box-shadow: 0px 0px 10px $black;
+}
+
+@media screen and (min-width: 960px){
+    .intro{
+        display: flex;
+        flex-direction: wrap;
+        align-items: center;
+        justify-content: center;
+        .intro__buttons{
+            width: 400px;
+            .intro__list{
+                width: 100%;
+            }
+            .intro__button{
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -157,6 +180,7 @@ img{
         text-align: center;
         padding: 1rem;
         margin: 0 1rem;
+        width: 300px;
         .aboutme__subtitle{
             font-size: 1.5em;
         }
@@ -200,19 +224,86 @@ img{
         opacity: 1 !important;
     }
 }
+@media screen and (min-width: 640px){
+    .container{
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        align-items: flex-start;
+        .title{
+            background-color: $black;
+            color: white;
+            border: none;
+            border-radius: 0 1rem 1rem 0;
+            position: absolute;
+            box-shadow: 0 0 10px $black;
+            left: 0;
+            top: 50%;
+            z-index: 1;
+        }
+        .aboutme__container{
+            height: 600px;
+            .aboutme__text{
+                height: 200px;
+            }
+        }
+    }
+}
 
 // SKILLS
 
 .list__skills{
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40%, max-content));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 4rem;
     .skills__item{
         background-color: $black;
         color: white;
         padding: 1rem;
-        margin: .5rem .2rem;
+        margin: .5rem 1rem;
         border-radius: 1rem;
         text-align: center;
+    }
+}
+
+// CONTACT ME
+
+footer .container{
+    background-color: $black;
+    padding: 4rem 0;
+    .title{
+        background-color: white;
+        color: $black;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 60%;
+        .form__inp{
+            text-align: center;
+            padding: .5rem;
+            font-size: 1.2em;
+        }
+        .form__inp:first-child{
+            border-radius: 1rem 1rem 0 0;
+        }
+        .form__inp:focus{
+            outline: 2px solid $blue;
+        }
+        .form__txtarea:focus{
+            outline: 2px solid $blue;
+        }
+        .form__txtarea{
+            text-align: center;
+            padding: .5rem;
+            font-size: 1.2em;
+            resize: none;
+            height: 200px;
+            border-radius: 0 0 1rem 1rem;
+        }
     }
 }
