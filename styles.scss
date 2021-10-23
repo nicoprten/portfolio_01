@@ -80,9 +80,6 @@ img{
 
 .title{
     color: $blue;
-    border-bottom: 2px solid $blue;
-    border-top: 2px solid $blue;
-    border-radius: 1.5rem;
     padding: 1rem;
 }
 
@@ -157,6 +154,13 @@ img{
             width: 400px;
             .intro__list{
                 width: 100%;
+                .intro__item{
+                    .intro__link{
+                        .intro__img{
+                            width: 45px;
+                        }
+                    }
+                }
             }
             .intro__button{
                 width: 100%;
@@ -277,6 +281,7 @@ footer .container{
     .title{
         background-color: white;
         color: $black;
+        margin-bottom: 2rem;
     }
     .form{
         display: flex;

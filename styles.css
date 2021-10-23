@@ -56,9 +56,6 @@ img {
 
 .title {
   color: #0072e7;
-  border-bottom: 2px solid #0072e7;
-  border-top: 2px solid #0072e7;
-  border-radius: 1.5rem;
   padding: 1rem; }
 
 .intro {
@@ -115,6 +112,8 @@ img {
       width: 400px; }
       .intro .intro__buttons .intro__list {
         width: 100%; }
+        .intro .intro__buttons .intro__list .intro__item .intro__link .intro__img {
+          width: 45px; }
       .intro .intro__buttons .intro__button {
         width: 100%; } }
 
@@ -207,7 +206,8 @@ footer .container {
   padding: 4rem 0; }
   footer .container .title {
     background-color: white;
-    color: #141414; }
+    color: #141414;
+    margin-bottom: 2rem; }
   footer .container .form {
     display: flex;
     flex-direction: column;
