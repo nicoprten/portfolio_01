@@ -21,3 +21,6 @@ button_cv.addEventListener('click', (e)=>{
     msj_cv.innerHTML === '' ? msj_cv.innerHTML = `<p>Successful download!</p>` : $('#msj_cv').show().delay(2000).slideUp(200);
     $('#msj_cv').delay(2000).slideUp(200);
 })
+
+// SUBMIT FORM
+

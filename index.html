@@ -121,11 +121,13 @@
         <!-- CONTACT -->
         <div id='contact' class='container'>
             <h2 class='title'>CONTACT ME</h2>
-            <form class='form'>
-                <input class='form__inp' type='text' id='name' placeholder='Full name'>
-                <input class='form__inp' type='text' id='email' placeholder='Email'>
-                <textarea class='form__txtarea' type='text' id='message' placeholder='Text me!'></textarea>
-                <button class='form__send'>ENVIAR</button>
+            <form action="https://formsubmit.co/nicoprtenjaca@gmail.com" method='POST' class='form'>
+                <input type="hidden" name="_subject" value="Mail del portfolio">
+                <input type="hidden" name="_captcha" value="false">
+                <input class='form__inp' type='text' name='name' id='name' placeholder='Full name'>
+                <input class='form__inp' type='text' name='email' id='email' placeholder='Email' required>
+                <input class='form__txtarea' type='text' name='text' id='message' placeholder='Text me!'></input>
+                <button type='submit' id='submitform' class='form__send'>ENVIAR</button>
             </form>
         </div>
     </footer>
