@@ -1,7 +1,11 @@
 <h1>Portfolio - Nicolás Prtenjaca</h1>
 <h2><i>Frontend Developer</i></h2>
 
-[![portfoliot_show_git](https://user-images.githubusercontent.com/41525219/138465903-e622c265-129e-47a9-b705-3e4c996087a0.png)][1]
+<p>Hecho con HTML, SASS y JS Vanila.</p>
+<p><i>Dejame un mensaje en el formulario por cualquier tipo de consulta!</i></p>
+Podes verlo entrando [acá](portfolio-np.vercel.app)
 
 
-[1]: https://nicoprten.github.io/portfolio_np/
+
+[![portfolio_show_git](https://user-images.githubusercontent.com/41525219/139324586-2f00830e-738e-4efa-98f1-34a0f1a4097e.png)][1]
+[1]: portfolio-np.vercel.app
