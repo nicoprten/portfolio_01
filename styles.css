@@ -15,7 +15,7 @@ img {
   padding: 10px 0;
   box-shadow: 0 0 10px #141414;
   position: fixed;
-  z-index: 2;
+  z-index: 10;
   top: 0;
   width: 100%; }
   .nav .nav__logo {
@@ -128,9 +128,11 @@ img {
     border-radius: 1.5rem;
     color: white;
     text-align: center;
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
     margin: 0 1rem;
-    width: 300px; }
+    z-index: 2; }
     .container .aboutme__container .aboutme__subtitle {
       font-size: 1.5em; }
     .container .aboutme__container .aboutme__text {
@@ -162,7 +164,7 @@ img {
       color: #0072e7; }
 
 @media screen and (max-width: 400px) {
-  .lp__text {
+  .aboutme__container .lp .lp__text {
     opacity: 1 !important; } }
 
 @media screen and (min-width: 640px) {
@@ -179,31 +181,32 @@ img {
       position: absolute;
       box-shadow: 0 0 10px #141414;
       left: 0;
-      top: 50%;
+      top: 40%;
       z-index: 1; }
     .container .aboutme__container {
-      width: 40%; }
-      .container .aboutme__container .aboutme__text {
-        margin: 1rem 0; } }
+      width: 40%; } }
 
 @media screen and (min-width: 940px) {
   .container .aboutme__container {
     width: 30%; } }
 
-.list__skills {
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  width: 100%;
-  max-width: 450px;
-  margin-bottom: 4rem; }
-  .list__skills .skills__item {
-    background-color: #141414;
-    color: white;
-    padding: 1rem;
-    margin: .5rem 1rem;
-    border-radius: 1rem;
-    text-align: center; }
+#skills {
+  flex-direction: column;
+  align-items: center; }
+  #skills .list__skills {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 4rem; }
+    #skills .list__skills .skills__item {
+      background-color: #141414;
+      color: white;
+      padding: 1rem;
+      margin: .5rem 1rem;
+      border-radius: 1rem;
+      text-align: center; }
 
 #contact {
   background-color: #141414;

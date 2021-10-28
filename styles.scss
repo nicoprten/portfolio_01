@@ -26,7 +26,7 @@ img{
     padding: 10px 0;
     box-shadow: 0 0 10px $black;
     position: fixed;
-    z-index: 2;
+    z-index: 10;
     top: 0;
     width: 100%;
     .nav__logo{
@@ -182,9 +182,11 @@ img{
         border-radius: 1.5rem;
         color: white;
         text-align: center;
+        display: flex;
+        flex-direction: column;
         padding: 1rem;
         margin: 0 1rem;
-        width: 300px;
+        z-index: 2;
         .aboutme__subtitle{
             font-size: 1.5em;
         }
@@ -224,8 +226,12 @@ img{
     }
 }
 @media screen and (max-width: 400px) {
-    .lp__text{
-        opacity: 1 !important;
+    .aboutme__container{
+        .lp{
+            .lp__text{
+                opacity: 1 !important;
+            }
+        }
     }
 }
 @media screen and (min-width: 640px){
@@ -242,14 +248,11 @@ img{
             position: absolute;
             box-shadow: 0 0 10px $black;
             left: 0;
-            top: 50%;
+            top: 40%;
             z-index: 1;
         }
         .aboutme__container{
             width: 40%;
-            .aboutme__text{
-                margin: 1rem 0;
-            }
         }
     }
 }
@@ -262,21 +265,24 @@ img{
 }
 
 // SKILLS
-
-.list__skills{
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    width: 100%;
-    max-width: 450px;
-    margin-bottom: 4rem;
-    .skills__item{
-        background-color: $black;
-        color: white;
-        padding: 1rem;
-        margin: .5rem 1rem;
-        border-radius: 1rem;
-        text-align: center;
+#skills{
+    flex-direction: column;
+    align-items: center;
+    .list__skills{
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        width: 100%;
+        max-width: 450px;
+        margin-bottom: 4rem;
+        .skills__item{
+            background-color: $black;
+            color: white;
+            padding: 1rem;
+            margin: .5rem 1rem;
+            border-radius: 1rem;
+            text-align: center;
+        }
     }
 }
 
